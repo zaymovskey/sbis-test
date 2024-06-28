@@ -1,15 +1,7 @@
 {
   "extends": [
-    "stylelint-config-standard-scss",
-    "stylelint-config-prettier-scss"
+    "stylelint-config-standard",
+    "stylelint-order-config-standard"
   ],
-  "plugins": ["stylelint-prettier"],
-  "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ]
-  }
+  "plugins": ["stylelint-order"]
 }
