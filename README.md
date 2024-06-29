@@ -1,2 +1,7 @@
 Есть проблема, что в макете слишком большие размеры были указаны, но я от него отходить не стал, на 80% масшатабе выглядит норм) <br />
-Развернуто на https://zaymovskey.github.io/sbis-test/
+Развернуто на https://zaymovskey.github.io/sbis-test/</br>
+Развернуть локально: <br/>
+npm run dev <br/>
+или <br/>
+npm run build
+npm run preview
