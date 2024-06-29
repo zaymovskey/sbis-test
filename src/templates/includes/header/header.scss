@@ -23,16 +23,22 @@
   }
 
   &__list-item {
-    &:not(:first-child)::before {
-      margin: auto 10px;
+    line-height: $font-size-s;
 
-      content: "•";
+    &:not(:first-child)::before {
+      padding: 0 24px;
+
+      content: '\2022';
 
       color: $color-cream;
     }
   }
 
   &__logo {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+
     & object {
       pointer-events: none;
     }

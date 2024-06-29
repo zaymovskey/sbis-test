@@ -1,11 +1,81 @@
 @import "src/styles/variables/global";
+@import "src/styles/mixins";
+
+.main-page-first-block__wrapper {
+  padding: 64px 0;
+}
 
 .main-page-first-block {
-  padding: $padding-y-main $padding-x-main;
+  padding: 32px $padding-x-main 0;
 
   color: $color-cream;
 
   background-image: url('/src/assets/images/main-page-first-block.png');
   background-repeat: no-repeat;
   background-size: cover
+}
+
+.first-block-info {
+  display: flex;
+
+  margin-bottom: 48px;
+
+  &__column1 > p:nth-child(1) {
+    margin-bottom: 32px;
+
+    color: $color-brown;
+
+    font-size: $font-size-2xl;
+    font-weight: 300;
+  }
+
+  &__column1 > p:nth-child(2) {
+    font-size: $font-size-l;
+    font-weight: 600;
+  }
+
+  &__column2 {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+
+    & object {
+      pointer-events: none;
+    }
+  }
+}
+
+.main-page-first-block__catalog-button {
+  display: inline-block;
+
+  margin-bottom: 64px;
+
+  @include button-light;
+}
+
+.advantages {
+  display: flex;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: center;
+    gap: 8px;
+
+    &-title {
+      text-align: center;
+
+      font-size: $font-size-2xl;
+      font-weight: 700;
+    }
+
+    &-info {
+      text-align: center;
+
+      font-weight: 400;
+    }
+  }
 }

@@ -1,0 +1,13 @@
+@import "src/styles/variables/global";
+
+@mixin button-light {
+  padding: 24px 40px;
+
+  text-transform: uppercase;
+
+  color: $color-cream;
+  border: 1px solid $color-cream;
+  border-radius: 20px;
+
+  font-size: $font-size-xs;
+}
