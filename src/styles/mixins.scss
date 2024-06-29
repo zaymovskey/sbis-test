@@ -11,3 +11,12 @@
 
   font-size: $font-size-xs;
 }
+
+@mixin block-title {
+  font-size: $font-size-xl;
+  font-weight: 400;
+
+  &_dark {
+    color: $color-black;
+  }
+}
