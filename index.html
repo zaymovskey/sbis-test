@@ -1,18 +1,15 @@
-<!doctype html>
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <!--    <link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="src/styles/index.scss" />
-        <title>Струга</title>
-    </head>
-    <body>
-        <!-- prettier-ignore -->
-        <main>
-            {{> mainPageFirstBlock }}
-            {{> mainPageSecondBlock }}
-            {{> mainPageThirdBlock }}
-        </main>
-    </body>
-</html>
+{% extends "src/templates/base-template.html" %}
+
+{% block page_title %}Главная{% endblock page_title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="src/templates/pages/main-page/first-block/first-block.scss" />
+    <link rel="stylesheet" href="src/templates/pages/main-page/second-block/second-block.scss" />
+    <link rel="stylesheet" href="src/templates/pages/main-page/third-block/third-block.scss" />
+{% endblock %}
+
+{% block content %}
+    {% include "src/templates/pages/main-page/first-block/first-block.html"  %}
+    {% include "src/templates/pages/main-page/second-block/second-block.html"  %}
+    {% include "src/templates/pages/main-page/third-block/third-block.html"  %}
+{% endblock %}
