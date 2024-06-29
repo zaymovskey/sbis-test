@@ -1,0 +1,36 @@
+@use "sass:color";
+@import "src/styles/variables/global";
+
+
+.header {
+  padding: 20px 60px;
+
+  border-radius: 20px;
+  background: rgba($color-brown, 0.2);
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+
+    &-list {
+      display: flex;
+    }
+  }
+
+  &__list-item {
+    &:not(:first-child)::before {
+      margin: auto 10px;
+
+      content: "•";
+
+      color: $color-cream;
+    }
+  }
+}
+
+

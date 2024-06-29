@@ -1,0 +1,11 @@
+@import "src/styles/variables/global";
+
+.main-page-first-block {
+  padding: $padding-y-main $padding-x-main;
+
+  color: $color-cream;
+
+  background-image: url('/src/assets/images/main-page-first-block.png');
+  background-repeat: no-repeat;
+  background-size: cover
+}

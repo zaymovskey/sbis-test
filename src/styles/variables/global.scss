@@ -1,26 +1,24 @@
 @import "../fonts";
 
-:root {
-    // Colors
-    --color-white: #FFF;
-    --color-black: #000;
-    --color-black-lt: #212121;
-    --color-black-dk: #171717;
-    --color-brown: #be713c;
-    --color-cream: #f5e2c3;
+// Colors
+$color-white: #FFF;
+$color-black: #000;
+$color-black-lt: #212121;
+$color-black-dk: #171717;
+$color-brown: #be713c;
+$color-cream: #f5e2c3;
 
-    // Fonts
-    --font-family-main: 'Montserrat-Regular', serif;
+// Fonts
+$font-family-main: 'Montserrat-Regular', serif;
 
-    // Font-sizes
-    --font-size-xs: 16px;
-    --font-size-s: 20px;
-    --font-size-m: 24px;
-    --font-size-l: 32px;
-    --font-size-xl: 50px;
-    --font-size-2xl: 60px;
+// Font-sizes
+$font-size-xs: 16px;
+$font-size-s: 20px;
+$font-size-m: 24px;
+$font-size-l: 32px;
+$font-size-xl: 50px;
+$font-size-2xl: 60px;
 
-    // Paddings
-    --padding-y-main: 32px;
-    --padding-x-main: 312px;
-}
+// Paddings
+$padding-y-main: 32px;
+$padding-x-main: 312px;

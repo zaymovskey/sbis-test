@@ -2,9 +2,11 @@
 @import "variables/global";
 
 body {
-  color: var(--color-black);
-  background-color: var(--color-white);
+  height: 100%;
 
-  font-family: var(--font-family-main), serif;
-  font-size: var(--font-size-s);
+  color: $color-black;
+  background-color: $color-white;
+
+  font-family: $font-family-main, serif;
+  font-size: $font-size-s;
 }
