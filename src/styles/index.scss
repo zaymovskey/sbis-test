@@ -34,7 +34,7 @@ body {
 
   border-radius: 50%;
 
-  & > object {
+  & > img {
     pointer-events: none;
   }
 }
@@ -50,7 +50,7 @@ body {
 
   transform: translate(calc(100% + 30px), -50%);
 
-  & > object {
+  & > img {
     transform: scale(-1, 1)
   }
 }
