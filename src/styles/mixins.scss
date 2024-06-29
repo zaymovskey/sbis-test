@@ -12,6 +12,18 @@
   font-size: $font-size-xs;
 }
 
+@mixin button-dark {
+  padding: 24px 40px;
+
+  text-transform: uppercase;
+
+  color: $color-black-dk;
+  border: 1px solid $color-black-dk;
+  border-radius: 20px;
+
+  font-size: $font-size-xs;
+}
+
 @mixin block-title {
   font-size: $font-size-xl;
   font-weight: 400;

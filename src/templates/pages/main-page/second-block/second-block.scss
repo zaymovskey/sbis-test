@@ -95,4 +95,17 @@
 .catalog-categories__second-block {
   display: flex;
   gap: 24px;
+
+  margin-bottom: 48px;
+}
+
+.main-page-second-block__button-block {
+  display: flex;
+  justify-content: center;
+}
+
+.main-page-second-block__catalog-button {
+  display: inline-block;
+
+  @include button-dark;
 }
