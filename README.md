@@ -3,5 +3,5 @@
 Развернуть локально: <br/>
 npm run dev <br/>
 или <br/>
-npm run build
+npm run build <br/>
 npm run preview
