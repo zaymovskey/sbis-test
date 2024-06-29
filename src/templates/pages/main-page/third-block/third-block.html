@@ -24,16 +24,16 @@
             </p>
         </div>
         <div class="about-company-block__images">
-            <img src="/src/assets/images/about-company-first.png" alt="">
-            <img src="/src/assets/images/about-company-second.png" alt="">
+            <img src="/src/assets/images/about-company-first.png" alt="" loading="lazy">
+            <img src="/src/assets/images/about-company-second.png" alt="" loading="lazy">
         </div>
     </div>
     <h1 class="main-page-third-block__block-title">Наши клиенты</h1>
 
-    <div class="slider-wrapper">
+    <div class="slider-wrapper clients-slider-wrapper">
         <div class="swiper clients-slider slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide clients-slider__item">
                     <object type="image/svg+xml" data="/src/assets/svgs/client-tangai.svg">
                     </object>
                 </div>
@@ -83,5 +83,82 @@
             <object type="image/svg+xml" data="/src/assets/svgs/arrow-left.svg">
             </object>
         </button>
+    </div>
+
+    <h1 class="main-page-third-block__block-title">Отзывы</h1>
+
+    <div class="slider-wrapper">
+        <div class="swiper reviews-slider slider">
+            <div class="swiper-wrapper">
+                {% for i in range(0, 4) -%}
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-card__stars">
+                                <object type="image/svg+xml" data="/src/assets/svgs/star.svg">
+                                </object>
+                                <object type="image/svg+xml" data="/src/assets/svgs/star.svg">
+                                </object>
+                                <object type="image/svg+xml" data="/src/assets/svgs/star.svg">
+                                </object>
+                                <object type="image/svg+xml" data="/src/assets/svgs/star.svg">
+                                </object>
+                                <object type="image/svg+xml" data="/src/assets/svgs/star.svg">
+                                </object>
+                            </div>
+                            <div class="review-card__text">
+                                Будем лаконичны — мы довольны совместными результатами
+                                с компанией Struga.pro и собираемся дальше продолжить нашу
+                                продуктивную работу.
+                            </div>
+                            <div class="review-card__author">
+                                <img src="/src/assets/images/review-author.png" alt="" loading="lazy">
+                                <div class="review-card__author-info">
+                                    <p>Иванов Иван</p>
+                                    <p>Директор Music Hall</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-card__stars">
+                                <object type="image/svg+xml" data="/src/assets/svgs/star.svg">
+                                </object>
+                                <object type="image/svg+xml" data="/src/assets/svgs/star.svg">
+                                </object>
+                                <object type="image/svg+xml" data="/src/assets/svgs/star.svg">
+                                </object>
+                                <object type="image/svg+xml" data="/src/assets/svgs/star.svg">
+                                </object>
+                                <object type="image/svg+xml" data="/src/assets/svgs/star.svg">
+                                </object>
+                            </div>
+                            <div class="review-card__text">
+                                Будем лаконичны — мы довольны совместными результатами с компанией Struga.pro
+                            </div>
+                            <div class="review-card__author">
+                                <img src="/src/assets/images/review-author.png" alt="" loading="lazy">
+                                <div class="review-card__author-info">
+                                    <p>Алексей Ловков</p>
+                                    <p>Владелец “Сыровар Ловков”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {%- endfor %}
+            </div>
+        </div>
+        <button class="slider-button prev reviews-slider__prev-button">
+            <object type="image/svg+xml" data="/src/assets/svgs/arrow-left.svg">
+            </object>
+        </button>
+        <button class="slider-button next reviews-slider__next-button">
+            <object type="image/svg+xml" data="/src/assets/svgs/arrow-left.svg">
+            </object>
+        </button>
+    </div>
+
+    <div class="main-page-third-block__button-block">
+        <a class="main-page-third-block__catalog-button" href="">Смотреть весь каталог</a>
     </div>
 </div>

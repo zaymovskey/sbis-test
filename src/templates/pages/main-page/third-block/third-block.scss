@@ -22,6 +22,10 @@
   gap: 32px;
 }
 
+.clients-slider-wrapper {
+  margin-bottom: 75px;
+}
+
 .about-company-block {
   display: flex;
 
@@ -61,4 +65,62 @@
 
     height: auto;
   }
+}
+
+.review-card {
+  min-height: 250px;
+  padding: 24px;
+
+  border: 1px solid $color-cream;
+  border-radius: 20px;
+
+  font-size: $font-size-xs;
+
+  &__stars {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    overflow: hidden;
+
+    min-height: 100px;
+
+    max-height: 100px;
+  }
+
+  &__author {
+    display: flex;
+    gap: 24px;
+
+    align-items: center;
+
+    & > img:nth-child(1) {
+      border-radius: 10px;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      & > p:nth-child(1) {
+        color: $color-brown;
+
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.main-page-third-block__button-block {
+  display: flex;
+  justify-content: center;
+}
+
+.main-page-third-block__catalog-button {
+  display: inline-block;
+
+  margin-top: 48px;
+
+  @include button-light;
 }
