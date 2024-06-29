@@ -2,6 +2,6 @@
 Развернуто на https://zaymovskey.github.io/sbis-test/</br><br/><br/>
 Развернуть локально: <br/>
 npm run dev <br/>
-или <br/><br/><br/>
+или <br/>
 npm run build
 npm run preview
